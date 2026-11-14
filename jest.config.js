@@ -25,6 +25,10 @@ export default {
   reporters: ['default'],
   resolver: 'ts-jest-resolver',
   testEnvironment: 'node',
+  moduleNameMapper: {
+    '^@actions/core$': '<rootDir>/__fixtures__/core.ts',
+    '^@actions/github$': '<rootDir>/__fixtures__/github.ts'
+  },
   testMatch: ['**/*.test.ts'],
   testPathIgnorePatterns: ['/dist/', '/node_modules/'],
   transform: {

@@ -1,7 +1,7 @@
 /**
  * Unit tests for the action's main functionality, src/main.ts
  */
-import { jest } from '@jest/globals'
+import { describe, it, afterEach, expect, jest } from '@jest/globals'
 import * as core from '../__fixtures__/core.js'
 
 // Mocks should be declared before the module being tested is imported.
