@@ -38,7 +38,7 @@ inputs:
     required: false
     default: ''
   max-comments:
-    description: Most inline comments per runs
+    description: Most inline comments per run
     required: false
     default: '5'
   min-confidence:
@@ -48,9 +48,9 @@ inputs:
   ignore-paths:
     description: Comma-separated files never sent to the LLM
     required: false
-    default: 'packages-lock.json,dis/**'
+    default: 'package-lock.json,dist/**'
   model:
-    description: GitHub Modesls model name
+    description: GitHub Models model name
     required: false
     default: ''
 
