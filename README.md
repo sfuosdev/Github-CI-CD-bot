@@ -692,7 +692,6 @@ confirmation of contributor rights and third-party licensing requirements.
 Once finalized, the full license terms will be available in the repository's
 `LICENSE` file.
 
-
 ## Connect With SFU OS DEV
 
 - **GitHub Organization:** https://github.com/sfuosdev
