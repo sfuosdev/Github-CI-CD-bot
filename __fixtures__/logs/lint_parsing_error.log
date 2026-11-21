@@ -1,0 +1,297 @@
+2026-11-19T03:11:40.7706701Z Current runner version: '2.338.2'
+2026-11-19T03:11:40.7734371Z ##[group]Runner Image Provisioner
+2026-11-19T03:11:40.7735660Z Hosted Compute Agent
+2026-11-19T03:11:40.7736406Z Version: 20261103.629
+2026-11-19T03:11:40.7737328Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-19T03:11:40.7738219Z Build Date: 2026-11-03T17:26:59Z
+2026-11-19T03:11:40.7739168Z Worker ID: {aa47f285-3525-44f3-81b1-bd222e0b0005}
+2026-11-19T03:11:40.7739994Z Region: eastus2
+2026-11-19T03:11:40.7740726Z Cloud: Azure
+2026-11-19T03:11:40.7741354Z ##[endgroup]
+2026-11-19T03:11:40.7743094Z ##[group]Operating System
+2026-11-19T03:11:40.7743926Z Ubuntu
+2026-11-19T03:11:40.7744649Z 26.04.1
+2026-11-19T03:11:40.7745274Z LTS
+2026-11-19T03:11:40.7746064Z ##[endgroup]
+2026-11-19T03:11:40.7746833Z ##[group]Runner Image
+2026-11-19T03:11:40.7747640Z Image: ubuntu-26.04
+2026-11-19T03:11:40.7748329Z Version: 20261111.196.1
+2026-11-19T03:11:40.7749945Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-19T03:11:40.7752215Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+2026-11-19T03:11:40.7753487Z ##[endgroup]
+2026-11-19T03:11:40.7754850Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T03:11:40.7757254Z Contents: read
+2026-11-19T03:11:40.7758145Z Metadata: read
+2026-11-19T03:11:40.7758793Z ##[endgroup]
+2026-11-19T03:11:40.7761382Z Secret source: None
+2026-11-19T03:11:40.7762471Z Cache mode: write
+2026-11-19T03:11:40.7763676Z Prepare workflow directory
+2026-11-19T03:11:40.8132883Z Prepare all required actions
+2026-11-19T03:11:40.8188619Z Getting action download info
+2026-11-19T03:11:40.9856350Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-19T03:11:41.1262783Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+2026-11-19T03:11:41.2687435Z Complete job name: TypeScript Tests
+2026-11-19T03:11:41.3356736Z ##[group]Run actions/checkout@v6
+2026-11-19T03:11:41.3357397Z with:
+2026-11-19T03:11:41.3357770Z   repository: sfuosdev/Github-CI-CD-bot
+2026-11-19T03:11:41.3360760Z   token: ***
+2026-11-19T03:11:41.3361122Z   ssh-strict: true
+2026-11-19T03:11:41.3361476Z   ssh-user: git
+2026-11-19T03:11:41.3361835Z   persist-credentials: true
+2026-11-19T03:11:41.3362228Z   clean: true
+2026-11-19T03:11:41.3362588Z   sparse-checkout-cone-mode: true
+2026-11-19T03:11:41.3363003Z   fetch-depth: 1
+2026-11-19T03:11:41.3363355Z   fetch-tags: false
+2026-11-19T03:11:41.3363712Z   show-progress: true
+2026-11-19T03:11:41.3364067Z   lfs: false
+2026-11-19T03:11:41.3364396Z   submodules: false
+2026-11-19T03:11:41.3364751Z   set-safe-directory: true
+2026-11-19T03:11:41.3365155Z   allow-unsafe-pr-checkout: false
+2026-11-19T03:11:41.3365839Z ##[endgroup]
+2026-11-19T03:11:41.5302319Z Syncing repository: sfuosdev/Github-CI-CD-bot
+2026-11-19T03:11:41.5304528Z ##[group]Getting Git version info
+2026-11-19T03:11:41.5305338Z Working directory is '/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot'
+2026-11-19T03:11:41.5307080Z [command]/usr/bin/git version
+2026-11-19T03:11:41.5307837Z git version 2.56.1
+2026-11-19T03:11:41.5324588Z ##[endgroup]
+2026-11-19T03:11:41.5338206Z Temporarily overriding HOME='/home/runner/work/_temp/04a40f6f-a314-4bbe-a631-340674000f00' before making global git config changes
+2026-11-19T03:11:41.5340022Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T03:11:41.5342047Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot
+2026-11-19T03:11:41.5419437Z Deleting the contents of '/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot'
+2026-11-19T03:11:41.5421924Z ##[group]Determining repository object format
+2026-11-19T03:11:41.5423880Z ##[endgroup]
+2026-11-19T03:11:41.5424711Z ##[group]Initializing the repository
+2026-11-19T03:11:41.5429307Z [command]/usr/bin/git init /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot
+2026-11-19T03:11:41.5515796Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T03:11:41.5517242Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T03:11:41.5518040Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T03:11:41.5518667Z hint: call:
+2026-11-19T03:11:41.5519015Z hint:
+2026-11-19T03:11:41.5519482Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T03:11:41.5520019Z hint:
+2026-11-19T03:11:41.5520516Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T03:11:41.5521303Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T03:11:41.5521926Z hint:
+2026-11-19T03:11:41.5522283Z hint: 	git branch -m <name>
+2026-11-19T03:11:41.5522690Z hint:
+2026-11-19T03:11:41.5523249Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T03:11:41.5532524Z Initialized empty Git repository in /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git/
+2026-11-19T03:11:41.5540213Z [command]/usr/bin/git remote add origin https://github.com/sfuosdev/Github-CI-CD-bot
+2026-11-19T03:11:41.5586008Z ##[endgroup]
+2026-11-19T03:11:41.5586919Z ##[group]Disabling automatic garbage collection
+2026-11-19T03:11:41.5588675Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T03:11:41.5617232Z ##[endgroup]
+2026-11-19T03:11:41.5618279Z ##[group]Setting up auth
+2026-11-19T03:11:41.5618984Z Removing SSH command configuration
+2026-11-19T03:11:41.5624675Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T03:11:41.5656345Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T03:11:41.6022339Z Removing HTTP extra header
+2026-11-19T03:11:41.6030385Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T03:11:41.6060069Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T03:11:41.6289337Z Removing includeIf entries pointing to credentials config files
+2026-11-19T03:11:41.6293910Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T03:11:41.6322980Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T03:11:41.6557650Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T03:11:41.6591172Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git.path /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:11:41.6619741Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:11:41.6696321Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:11:41.6725280Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:11:41.6748729Z ##[endgroup]
+2026-11-19T03:11:41.6749385Z ##[group]Fetching the repository
+2026-11-19T03:11:41.6756402Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9ba04fc9027e16840753ef05df6a2290f248837a:refs/remotes/pull/39/merge
+2026-11-19T03:11:41.9346631Z From https://github.com/sfuosdev/Github-CI-CD-bot
+2026-11-19T03:11:41.9347974Z  * [new ref]         9ba04fc9027e16840753ef05df6a2290f248837a -> pull/39/merge
+2026-11-19T03:11:41.9356658Z ##[endgroup]
+2026-11-19T03:11:41.9357882Z ##[group]Determining the checkout info
+2026-11-19T03:11:41.9358897Z ##[endgroup]
+2026-11-19T03:11:41.9359455Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T03:11:41.9401447Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T03:11:41.9429754Z ##[group]Checking out the ref
+2026-11-19T03:11:41.9431395Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/39/merge
+2026-11-19T03:11:41.9525926Z Note: switching to 'refs/remotes/pull/39/merge'.
+2026-11-19T03:11:41.9526876Z 
+2026-11-19T03:11:41.9527729Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-19T03:11:41.9529818Z changes and commit them, and you can discard any commits you make in this
+2026-11-19T03:11:41.9531948Z state without impacting any branches by switching back to a branch.
+2026-11-19T03:11:41.9532834Z 
+2026-11-19T03:11:41.9533442Z If you want to create a new branch to retain commits you create, you may
+2026-11-19T03:11:41.9534829Z do so (now or later) by using -c with the switch command. Example:
+2026-11-19T03:11:41.9535838Z 
+2026-11-19T03:11:41.9536295Z   git switch -c <new-branch-name>
+2026-11-19T03:11:41.9536972Z 
+2026-11-19T03:11:41.9537358Z Or undo this operation with:
+2026-11-19T03:11:41.9537816Z 
+2026-11-19T03:11:41.9538131Z   git switch -
+2026-11-19T03:11:41.9538470Z 
+2026-11-19T03:11:41.9539144Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-19T03:11:41.9540090Z 
+2026-11-19T03:11:41.9541235Z HEAD is now at 9ba04fc Merge c5f6599278e8176edde6d0576ee15064501a0561 into 54ee83cef851975ebbc368fd5348b0ed45069358
+2026-11-19T03:11:41.9544136Z ##[endgroup]
+2026-11-19T03:11:41.9577813Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T03:11:41.9599828Z 9ba04fc9027e16840753ef05df6a2290f248837a
+2026-11-19T03:11:41.9967443Z ##[group]Run actions/setup-node@v6
+2026-11-19T03:11:41.9968118Z with:
+2026-11-19T03:11:41.9968590Z   node-version-file: .node-version
+2026-11-19T03:11:41.9969221Z   cache: npm
+2026-11-19T03:11:41.9969682Z   check-latest: false
+2026-11-19T03:11:41.9976561Z   token: ***
+2026-11-19T03:11:41.9977051Z   package-manager-cache: true
+2026-11-19T03:11:41.9977647Z ##[endgroup]
+2026-11-19T03:11:42.1102747Z Node version file is not JSON file
+2026-11-19T03:11:42.1104136Z Resolved .node-version as 24.4.0
+2026-11-19T03:11:42.1120313Z Attempting to download 24.4.0...
+2026-11-19T03:11:42.5504711Z Acquiring 24.4.0 - x64 from https://github.com/actions/node-versions/releases/download/24.4.0-16210503505/node-24.4.0-linux-x64.tar.gz
+2026-11-19T03:11:42.8991646Z Extracting ...
+2026-11-19T03:11:42.9100002Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/e063a4ab-b0e5-4f7e-9af9-3bcc1c0a02b9 -f /home/runner/work/_temp/a9c995f7-033b-48e1-810b-5460e5e01242
+2026-11-19T03:11:43.6033543Z Adding to the cache ...
+2026-11-19T03:11:45.5618226Z ##[group]Environment details
+2026-11-19T03:11:45.7474065Z node: v24.4.0
+2026-11-19T03:11:45.7474438Z npm: 11.4.2
+2026-11-19T03:11:45.7474702Z yarn: 1.22.22
+2026-11-19T03:11:45.7475247Z ##[endgroup]
+2026-11-19T03:11:45.7493180Z [command]/opt/hostedtoolcache/node/24.4.0/x64/bin/npm config get cache
+2026-11-19T03:11:45.8236437Z /home/runner/.npm
+2026-11-19T03:11:45.9031933Z Cache hit for: node-cache-Linux-x64-npm-3d49f9676ca3e6d673201fd38a1e4c75180896d0a8c9748c534bd1485ff9980f
+2026-11-19T03:11:46.4143350Z Received 76021992 of 76021992 (100.0%), 155.6 MBs/sec
+2026-11-19T03:11:46.4143908Z Cache Size: ~73 MB (76021992 B)
+2026-11-19T03:11:46.4163308Z [command]/usr/bin/tar -xf /home/runner/work/_temp/a9b4fbc6-58cf-4ff8-9e71-a9a8b15e5557/cache.tzst -P -C /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot --use-compress-program unzstd
+2026-11-19T03:11:46.6635959Z Cache restored successfully
+2026-11-19T03:11:46.6668143Z Cache restored from key: node-cache-Linux-x64-npm-3d49f9676ca3e6d673201fd38a1e4c75180896d0a8c9748c534bd1485ff9980f
+2026-11-19T03:11:46.6914306Z ##[group]Run npm ci
+2026-11-19T03:11:46.6914625Z [36;1mnpm ci[0m
+2026-11-19T03:11:46.6965562Z shell: /usr/bin/bash -e {0}
+2026-11-19T03:11:46.6965800Z ##[endgroup]
+2026-11-19T03:11:49.8017606Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+2026-11-19T03:12:19.0163406Z 
+2026-11-19T03:12:19.0164081Z added 912 packages, and audited 913 packages in 32s
+2026-11-19T03:12:19.0164349Z 
+2026-11-19T03:12:19.0164495Z 191 packages are looking for funding
+2026-11-19T03:12:19.0164759Z   run `npm fund` for details
+2026-11-19T03:12:19.1719969Z 
+2026-11-19T03:12:19.1720842Z 32 vulnerabilities (30 moderate, 2 high)
+2026-11-19T03:12:19.1721088Z 
+2026-11-19T03:12:19.1721298Z To address issues that do not require attention, run:
+2026-11-19T03:12:19.1721628Z   npm audit fix
+2026-11-19T03:12:19.1721796Z 
+2026-11-19T03:12:19.1721968Z To address all issues (including breaking changes), run:
+2026-11-19T03:12:19.1722259Z   npm audit fix --force
+2026-11-19T03:12:19.1722396Z 
+2026-11-19T03:12:19.1722513Z Run `npm audit` for details.
+2026-11-19T03:12:19.2717358Z ##[group]Run npm run format:check
+2026-11-19T03:12:19.2717633Z [36;1mnpm run format:check[0m
+2026-11-19T03:12:19.2773798Z shell: /usr/bin/bash -e {0}
+2026-11-19T03:12:19.2774020Z ##[endgroup]
+2026-11-19T03:12:19.3533706Z 
+2026-11-19T03:12:19.3534441Z > github-ci-cd-bot@0.0.0 format:check
+2026-11-19T03:12:19.3534964Z > npx prettier --check .
+2026-11-19T03:12:19.3535180Z 
+2026-11-19T03:12:19.6116652Z Checking formatting...
+2026-11-19T03:12:20.1796899Z All matched files use Prettier code style!
+2026-11-19T03:12:20.2100950Z ##[group]Run npm run lint
+2026-11-19T03:12:20.2101193Z [36;1mnpm run lint[0m
+2026-11-19T03:12:20.2145222Z shell: /usr/bin/bash -e {0}
+2026-11-19T03:12:20.2145629Z ##[endgroup]
+2026-11-19T03:12:20.2950786Z 
+2026-11-19T03:12:20.2951323Z > github-ci-cd-bot@0.0.0 lint
+2026-11-19T03:12:20.2951604Z > npx eslint .
+2026-11-19T03:12:20.2951722Z 
+2026-11-19T03:12:24.8799391Z 
+2026-11-19T03:12:24.8800262Z /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/eslint.config.mjs
+2026-11-19T03:12:24.8801008Z   0:0  error  Parsing error: Too many files (>8) have matched the default project.
+2026-11-19T03:12:24.8801372Z 
+2026-11-19T03:12:24.8801905Z Having many files run with the default project is known to cause performance issues and slow down linting.
+2026-11-19T03:12:24.8802381Z 
+2026-11-19T03:12:24.8802685Z See https://tseslint.com/allowdefaultproject-glob-too-wide
+2026-11-19T03:12:24.8803010Z 
+2026-11-19T03:12:24.8803125Z Matching files:
+2026-11-19T03:12:24.8803736Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/core.ts
+2026-11-19T03:12:24.8804461Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/github.ts
+2026-11-19T03:12:24.8805145Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/octokit.ts
+2026-11-19T03:12:24.8806026Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/comments.test.ts
+2026-11-19T03:12:24.8806745Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/github.test.ts
+2026-11-19T03:12:24.8807459Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/config.test.ts
+2026-11-19T03:12:24.8808226Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/main.test.ts
+2026-11-19T03:12:24.8809006Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/octokit.test.ts
+2026-11-19T03:12:24.8810179Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/eslint.config.mjs
+2026-11-19T03:12:24.8810625Z 
+2026-11-19T03:12:24.8811731Z If you absolutely need more files included, set parserOptions.projectService.maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING to a larger value
+2026-11-19T03:12:24.8812582Z 
+2026-11-19T03:12:24.8812982Z /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/jest.config.js
+2026-11-19T03:12:24.8814320Z   0:0  error  Parsing error: Too many files (>8) have matched the default project.
+2026-11-19T03:12:24.8814735Z 
+2026-11-19T03:12:24.8815563Z Having many files run with the default project is known to cause performance issues and slow down linting.
+2026-11-19T03:12:24.8816087Z 
+2026-11-19T03:12:24.8816452Z See https://tseslint.com/allowdefaultproject-glob-too-wide
+2026-11-19T03:12:24.8816816Z 
+2026-11-19T03:12:24.8816933Z Matching files:
+2026-11-19T03:12:24.8817529Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/core.ts
+2026-11-19T03:12:24.8818358Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/github.ts
+2026-11-19T03:12:24.8819216Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/octokit.ts
+2026-11-19T03:12:24.8820098Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/comments.test.ts
+2026-11-19T03:12:24.8820990Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/github.test.ts
+2026-11-19T03:12:24.8821828Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/config.test.ts
+2026-11-19T03:12:24.8822619Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/main.test.ts
+2026-11-19T03:12:24.8823380Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/octokit.test.ts
+2026-11-19T03:12:24.8824081Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/eslint.config.mjs
+2026-11-19T03:12:24.8824782Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/jest.config.js
+2026-11-19T03:12:24.8825119Z 
+2026-11-19T03:12:24.8826195Z If you absolutely need more files included, set parserOptions.projectService.maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING to a larger value
+2026-11-19T03:12:24.8827002Z 
+2026-11-19T03:12:24.8827652Z /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/rollup.config.ts
+2026-11-19T03:12:24.8828484Z   0:0  error  Parsing error: Too many files (>8) have matched the default project.
+2026-11-19T03:12:24.8828874Z 
+2026-11-19T03:12:24.8829415Z Having many files run with the default project is known to cause performance issues and slow down linting.
+2026-11-19T03:12:24.8829920Z 
+2026-11-19T03:12:24.8830244Z See https://tseslint.com/allowdefaultproject-glob-too-wide
+2026-11-19T03:12:24.8830558Z 
+2026-11-19T03:12:24.8830683Z Matching files:
+2026-11-19T03:12:24.8831207Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/core.ts
+2026-11-19T03:12:24.8831950Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/github.ts
+2026-11-19T03:12:24.8832712Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__fixtures__/octokit.ts
+2026-11-19T03:12:24.8833675Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/comments.test.ts
+2026-11-19T03:12:24.8834447Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/github.test.ts
+2026-11-19T03:12:24.8835230Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/config.test.ts
+2026-11-19T03:12:24.8836151Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/main.test.ts
+2026-11-19T03:12:24.8836947Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/__tests__/octokit.test.ts
+2026-11-19T03:12:24.8837694Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/eslint.config.mjs
+2026-11-19T03:12:24.8838394Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/jest.config.js
+2026-11-19T03:12:24.8839129Z - /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/rollup.config.ts
+2026-11-19T03:12:24.8839482Z 
+2026-11-19T03:12:24.8840422Z If you absolutely need more files included, set parserOptions.projectService.maximumDefaultProjectFileMatchCount_THIS_WILL_SLOW_DOWN_LINTING to a larger value
+2026-11-19T03:12:24.8840940Z 
+2026-11-19T03:12:24.8841630Z ✖ 3 problems (3 errors, 0 warnings)
+2026-11-19T03:12:24.8841874Z 
+2026-11-19T03:12:25.0343193Z ##[error]Process completed with exit code 1.
+2026-11-19T03:12:25.0482847Z Post job cleanup.
+2026-11-19T03:12:25.1148992Z [command]/usr/bin/git version
+2026-11-19T03:12:25.1185335Z git version 2.56.1
+2026-11-19T03:12:25.1217394Z Temporarily overriding HOME='/home/runner/work/_temp/f4bd883e-55be-42d3-8b72-cf299c56c995' before making global git config changes
+2026-11-19T03:12:25.1218553Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T03:12:25.1221746Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot
+2026-11-19T03:12:25.1250502Z Removing SSH command configuration
+2026-11-19T03:12:25.1256223Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T03:12:25.1288326Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T03:12:25.1550206Z Removing HTTP extra header
+2026-11-19T03:12:25.1555891Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T03:12:25.1588868Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T03:12:25.1852850Z Removing includeIf entries pointing to credentials config files
+2026-11-19T03:12:25.1862232Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T03:12:25.1892468Z includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git.path
+2026-11-19T03:12:25.1893465Z includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git/worktrees/*.path
+2026-11-19T03:12:25.1900955Z includeif.gitdir:/github/workspace/.git.path
+2026-11-19T03:12:25.1901818Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T03:12:25.1903347Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git.path
+2026-11-19T03:12:25.1915902Z /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.1925243Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git.path /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.1959375Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git/worktrees/*.path
+2026-11-19T03:12:25.1982729Z /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.1992821Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Github-CI-CD-bot/Github-CI-CD-bot/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.2026551Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-19T03:12:25.2046227Z /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.2054026Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.2082951Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-19T03:12:25.2102202Z /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.2109165Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config
+2026-11-19T03:12:25.2146599Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T03:12:25.2380018Z Removing credentials config '/home/runner/work/_temp/git-credentials-d6fb5ed1-fbcc-4198-803c-31e36a130536.config'
+2026-11-19T03:12:25.2524844Z Cleaning up orphan processes
