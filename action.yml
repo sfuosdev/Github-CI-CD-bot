@@ -11,9 +11,17 @@ branding:
 # Define your inputs here.
 inputs:
   github-token:
-    description: Token for the GitHub API and GitHub Models
+    description: Token for the GitHub API
     required: false
     default: ${{ github.token }}
+  api-key:
+    description: API key for the configured LLM provider
+    required: false
+    default: ''
+  base-url:
+    description: Base URL for the LLM provider's OpenAI-compatible chat completions endpoint
+    required: false
+    default: ''
   ci-result:
     description: Result of the CI job (success, failure, cancelled or skipped)
     required: true
@@ -50,7 +58,7 @@ inputs:
     required: false
     default: 'package-lock.json,dist/**'
   model:
-    description: GitHub Models model name
+    description: Model name for the configured LLM provider
     required: false
     default: ''
 

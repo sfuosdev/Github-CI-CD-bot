@@ -10,6 +10,8 @@ export interface ActionConfig {
   minConfidence: number
   ignorePaths: string[]
   model: string
+  apiKey: string
+  baseUrl: string
 }
 
 export function parseConfig(): ActionConfig {
@@ -70,6 +72,8 @@ export function parseConfig(): ActionConfig {
   }
 
   const model = core.getInput('model').trim()
+  const apiKey = core.getInput('api-key') || process.env.GEMINI_API_KEY || ''
+  const baseUrl = core.getInput('base-url').trim()
 
   return {
     githubToken: core.getInput('github-token'),
@@ -80,6 +84,8 @@ export function parseConfig(): ActionConfig {
     maxComments,
     minConfidence,
     ignorePaths,
-    model
+    model,
+    apiKey,
+    baseUrl
   }
 }
